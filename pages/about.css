@@ -1,0 +1,1005 @@
+/* ================================
+GLOBAL RESET
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* ================================
+⭐ PAGE TRANSITION STYLING ⭐
+COPY THIS TO OTHER PAGES
+================================ */
+body {
+    background: linear-gradient(135deg, #f5f9ff, #eef4ff);
+    color: #1f2933;
+    animation: pageFade 0.6s ease;
+}
+
+
+@keyframes pageFade {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================================ */
+
+
+/* HEADER */
+/* HEADER */
+header {
+    background: #ffffff;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #1f2933;
+}
+
+nav.desktop-nav a {
+    margin-right: 50px;
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    position: relative;
+}
+
+nav.desktop-nav a:hover {
+    color: #2563eb;
+}
+
+nav.desktop-nav a.active {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+nav.desktop-nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #2563eb;
+    border-radius: 2px;
+}
+
+/* MOBILE NAV */
+.mobile-nav {
+    position: relative;
+    z-index: 1001;
+}
+
+/* Hide checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Hamburger button */
+.hamburger {
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 100%;
+    background: #000;
+    display: block;
+    transition: 0.3s ease;
+}
+
+/* Animate to X */
+#menu-toggle:checked+.hamburger span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+#menu-toggle:checked+.hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked+.hamburger span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Menu */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -50vw;
+    width: 50vw;
+    height: 100vh;
+    background: #1f2933;
+    padding: 60px 20px;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1002;
+}
+
+#menu-toggle:checked~.menu {
+    left: 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Mobile hamburger container */
+.mobile-nav {
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+}
+
+/* Hamburger button */
+.hamburger {
+    display: flex;
+    /* ensure it's visible */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    padding: 0;
+    /* remove extra padding */
+}
+
+/* Hamburger lines */
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background: #000;
+    transition: 0.3s ease;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+/* Hide mobile nav by default on desktop */
+@media (min-width: 900px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 100px;
+    }
+
+    .desktop-nav {
+        margin-right: 100px;
+
+    }
+}
+
+/* Hide desktop nav on mobile/tablet */
+@media (max-width: 900px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .logos {
+        margin-bottom: 30px;
+
+    }
+
+    /*  */
+}
+
+
+/* ABOUT SECTION */
+.about {
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width: 1300px;
+    margin: 80px auto;
+    /* padding: 0 20px; */
+    text-align: center;
+}
+
+
+.about h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-top: 100px;
+
+}
+
+
+.about p {
+    font-size: 50px;
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+
+.values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+
+.value-card {
+    background: #1f2933;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+
+.value-card:hover {
+    transform: translateY(-8px);
+}
+
+
+.value-card h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.value-card p {
+    font-size: 15px;
+    color: white;
+}
+
+/* vision & Mission styling */
+
+.pictext {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    margin-left: 100px;
+}
+
+.text h3 {
+    text-align: left;
+    border-bottom: 2px solid black;
+    width: 600px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.text .up {
+    margin-bottom: 30px;
+}
+
+.text .bottom {
+    margin-bottom: 20px;
+}
+
+.text .bottom h4 {
+    font-size: 22px;
+    text-align: left;
+}
+
+.bottom p {
+    font-size: 20px;
+}
+
+/* statusbox  */
+.statusbox {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* margin-top: 100px; */
+    /* margin-left: 100px; */
+    /* margin-right: 100px; */
+    color: white;
+}
+
+.statusbox .status {
+    background: #1f2933;
+    width: 250px;
+    height: 250px;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    margin-right: 90px;
+}
+
+.statusbox .status:hover {
+    transform: translateY(-8px);
+}
+
+.status h4 {
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.status p {
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.statusbox #special {
+    background: rgb(36, 36, 68);
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    margin-right: 70px;
+}
+
+.statusbox #special:hover {
+    transform: translateY(-8px);
+}
+
+#special h4 {
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+#special p {
+    margin-left: 61px;
+    font-size: 20px;
+}
+
+/* How it works styling */
+
+.howitworks {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.howitworks .pic {
+    margin-top: 110px;
+}
+
+.workstext {
+    margin-top: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.workstext h3 {
+    font-size: 50px;
+}
+
+.howtext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.howtext .number {
+    margin-top: 50px;
+    font-size: 45px;
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+.howtext .letters {
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.howtext .letters span {
+    font-weight: bold;
+}
+
+/* questions styling */
+
+.Question {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.quetext h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.quetext .questions {
+    display: flex;
+    flex-direction: column;
+}
+
+.questiontext {
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+.questiontext {
+    .question {
+        font-size: 25px;
+    }
+}
+
+.quepic {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+
+    /* margin-left: 250px; */
+
+    .quepictext p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    a {
+        background: #1f2933;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 50px;
+        text-decoration: none;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+}
+
+.faq-item {
+    border-bottom: 2px solid #1f2933;
+    padding: 15px 0;
+    text-align: left;
+}
+
+.faq-item summary {
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-right: 30px;
+}
+
+Remove default marker .faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Custom arrow */
+.faq-item summary::after {
+    content: "▾";
+    position: absolute;
+    right: 0;
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when open */
+.faq-item[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+*/ .faq-item summary {
+    outline: none;
+    /* removes focus outline */
+    user-select: none;
+    /* prevents text selection */
+    caret-color: transparent;
+    /* removes blinking cursor */
+}
+
+
+
+/* pricing */
+.pricing h2 {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #1f2933;
+    margin-bottom: 100px;
+}
+
+#price {
+    font-weight: bold;
+}
+
+.pricing {
+
+    h3 {
+        margin-top: 15px;
+        font-size: 30px;
+    }
+}
+
+.packs {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.packcard {
+    width: 350px;
+    height: 550px;
+    background: #1f2933;
+    color: rgba(255, 255, 255, 0.753);
+
+    h4 {
+        text-align: left;
+        font-size: 20px;
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+
+    }
+
+    .tam {
+        font-size: 15px;
+        color: white;
+        text-align: left;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid rgb(110, 110, 216);
+    }
+
+    p {
+        font-size: 15px;
+        color: white;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    #no {
+        font-size: 30px;
+    }
+
+    a {
+        background: rgb(110, 110, 216);
+        padding: 10px 25px;
+        margin-top: 20px;
+        text-decoration: none;
+        color: white;
+        border-radius: 30px;
+        margin-right: 160px;
+    }
+
+
+}
+
+
+/* why choose us */
+
+.whychoose {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.whypic {
+    margin-top: 159px;
+
+}
+
+.whytext {
+    margin-top: 50px;
+
+    h2 {
+        font-size: 30px;
+
+    }
+
+    p {
+        font-size: 50px;
+    }
+}
+
+.whycontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.whycontent .topics {
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.whycontent .topics .things {
+    text-align: left;
+    font-size: 30px;
+}
+
+.whycontent .topics .things p {
+    font-size: 20px;
+    margin-left: 10px;
+    /* font-weight: bold; */
+}
+
+
+/* trust stylig */
+
+.trust {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 100px;
+    background: #1f2933;
+    width: 1300px;
+    height: 800px;
+    padding-bottom: 300px;
+    box-shadow: 2px 5px 6px black;
+
+    #ink {
+        color: #2563eb
+    }
+
+    h4 {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+    .trustrow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .comment {
+        background:;
+        width: 800px;
+        height: 200px;
+        margin: 0 150px;
+        margin-top: 100px;
+        border-left:
+
+        h5 {
+            text-align: left;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        p {
+            margin: 20px 30px;
+            font-size: 15px;
+            color: white;
+            text-align: left;
+        }
+    }
+
+    .comment #buttom {
+        margin-bottom: 150px;
+    }
+
+
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.reviewer h5 {
+    font-size: 16px;
+    color: white;
+    margin: 0;
+}
+
+.comment p {
+    font-size: 15px;
+    color: white;
+}
+
+
+
+/* FOOTER */
+footer {
+    background: #1f2933;
+    color: #e5e7eb;
+    padding: 30px 40px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer .logo {
+    color: white;
+    text-align: left;
+    /* margin-left: 100px; */
+    margin-top: 30px;
+    /* margin-right: 100px; */
+}
+
+footer table {
+    /* margin-left: 100px; */
+    margin-top: 50px;
+}
+
+
+
+.show {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+    border-bottom: 2px solid white;
+}
+
+table tr td {
+    height: 30px;
+    width: 250px;
+}
+
+table tr td a {
+    color: rgb(236, 226, 226);
+    text-decoration: none;
+}
+
+#showspace {
+    margin-left: 50px;
+
+}
+
+#showspace h3 {
+    margin-top: 45px;
+}
+
+.twins {
+    display: flex;
+    flex-direction: row;
+}
+
+.twins .type input {
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.twins button {
+    margin-top: 30px;
+    padding: 10px 25px;
+    border-radius: 30px;
+
+    background: white;
+    color: black;
+
+
+}
+
+
+.twins button:hover {
+    background: black;
+    color: white;
+    animation: pageFade 0.6s ease;
+}
+
+footer p {
+    margin-top: 30px;
+    margin-left: 100px;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    nav a {
+        margin-left: 16px;
+    }
+
+
+    .about h1 {
+        font-size: 34px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .mobile-nav .menu {
+        width: 50vw;
+        height: 200vh;
+
+    }
+
+
+    .pictext {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .text {
+        margin-left: 0;
+    }
+
+    .text h3 {
+        width: 100%;
+    }
+
+    .statusbox {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+
+    .statusbox .status,
+    .statusbox #special {
+        margin-right: 0;
+    }
+
+
+    .howitworks {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .howtext {
+        width: 100%;
+    }
+
+
+    .Question {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
+    .packs {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .whychoose {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .whypic {
+        margin: 0;
+    }
+
+    .trust {
+        width: 100%;
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    .trust .comment {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    /* footer */
+    footer .logo {
+        margin-left: 20px;
+    }
+
+    .show {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .showspace {
+        align-items: center;
+    }
+
+    #showspace h3 {
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 75px;
+    }
+
+    .twins {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .type {
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 75px;
+
+    }
+
+    .twins button {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 75px;
+    }
+
+    .twins {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        justify-content: flex-start;
+
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+
+    footer {
+        padding: 30px 20px;
+    }
+}

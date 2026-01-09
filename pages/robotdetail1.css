@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f0f4ff, #e0fbff);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.back-link {
+  background: #1f2933;
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+/* Layout */
+.product-page {
+  max-width: 1200px;
+  margin: 30px auto;
+  margin-bottom: 200px;
+  display: flex;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+}
+
+.product-pageid {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+}
+
+.parts {
+  /* margin-bottom: 100px; */
+}
+
+/* Left Image Section */
+.image-section {
+  flex: 1;
+  background:  #1f2933;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.image-section img {
+  width: 85%;
+  max-width: 400px;
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.3));
+}
+
+.color-badges {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.color-badges span {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.white { background: #fff; }
+.black { background: #000; }
+.silver { background: #cfcfcf; }
+
+/* Right Details Section */
+.details-section {
+  flex: 1;
+  padding: 50px;
+}
+
+.details-section h1 {
+  font-size: 34px;
+  color: #0a0f1c;
+}
+
+.tagline {
+  color: #0072ff;
+  font-weight: 600;
+  margin: 8px 0 20px;
+}
+
+.description {
+  line-height: 1.7;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.features div {
+  background: #f1f6ff;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+/* Contact Box */
+.contact-box {
+  background:  #1f2933;
+  padding: 25px;
+  border-radius: 16px;
+  color: white;
+}
+
+.contact-box h2 {
+  margin-bottom: 15px;
+}
+
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-box input,
+.contact-box textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.contact-box textarea {
+  resize: none;
+  height: 80px;
+}
+
+.contact-box button {
+  background: #0a0f1c;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.contact-box button:hover {
+  background: black;
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .product-page {
+    flex-direction: column;
+  }
+
+  .details-section {
+    padding: 30px;
+  }
+
+    .image-section {
+        padding: 30px;
+    }
+
+    
+}
