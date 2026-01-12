@@ -398,7 +398,7 @@ nav.desktop-nav a.active::after {
 }
 
 /* optional overlay to darken video for readability */
-.hero::before {
+.page-title::before {
     content: '';
     position: absolute;
     top: 0;
