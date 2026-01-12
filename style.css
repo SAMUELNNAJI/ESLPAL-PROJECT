@@ -306,6 +306,28 @@ nav.desktop-nav a.active::after {
 
 
 /* HERO SECTION */
+.btn {
+    display: inline-block;
+    padding: 13px 18px;
+    margin-right: 14px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #1f2933;
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+
+    background: white;
+    color:  #2563eb;
+    border: 2px solid #1f2933;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.15);
+}
+
 .hero {
     position: relative;
     width: 100%;
@@ -469,7 +491,7 @@ nav.desktop-nav a.active::after {
         text-align: center
     }
 
-    div {
+    /* div {
         a {
             text-decoration: none;
             color: white;
@@ -484,7 +506,7 @@ nav.desktop-nav a.active::after {
             padding: 20px 30px;
         }
 
-    }
+    } */
 }
 
 @media (min-width: 1300px) {
