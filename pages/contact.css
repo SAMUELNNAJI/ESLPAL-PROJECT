@@ -504,6 +504,20 @@ footer p {
     footer {
         padding: 30px 20px;
     }
+
+     .showspace h3 {
+        margin-right: 130px;
+    }
+
+    .twins .type {
+        margin-right: 80px;
+    }
+
+    .twins div button {
+        margin-right: 90px;
+    }
+
+
    
 }
 

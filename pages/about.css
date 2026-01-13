@@ -948,10 +948,18 @@ footer p {
 
     }
 
+    .about {
+        max-width: 90%;
+    }
+
 
     .pictext {
         flex-direction: column;
         gap: 40px;
+    }
+
+    .pictext .pic img {
+        width: 90%;
     }
 
     .text {
@@ -984,10 +992,20 @@ footer p {
         width: 100%;
     }
 
+    .howitworks .pic img {
+        margin-top: 0;
+        width: 90%;
+        height: 400px;
+    }
+
 
     .Question {
         flex-direction: column;
         gap: 50px;
+    }
+
+    .quepic .pic img {
+        width: 90%;
     }
 
 
@@ -1004,6 +1022,11 @@ footer p {
 
     .whypic {
         margin: 0;
+
+        img {
+            width: 90%;
+        }
+       
     }
 
     .trust {
@@ -1073,6 +1096,18 @@ footer p {
 
     footer {
         padding: 30px 20px;
+    }
+
+    .showspace h3 {
+        margin-right: 130px;
+    }
+
+    .twins .type {
+        margin-right: 80px;
+    }
+
+    .twins div button {
+        margin-right: 90px;
     }
 }
 

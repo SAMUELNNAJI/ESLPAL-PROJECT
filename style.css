@@ -323,7 +323,7 @@ nav.desktop-nav a.active::after {
     transform: translateY(-3px);
 
     background: white;
-    color:  #2563eb;
+    color: #2563eb;
     border: 2px solid #1f2933;
     box-shadow: 0 12px 26px rgba(0, 0, 0, 0.15);
 }
@@ -975,6 +975,10 @@ footer p {
         flex-direction: column;
         justify-content: space-between;
 
+        img {
+            width: 90%;
+        }
+
     }
 
     .productimage img {
@@ -1141,7 +1145,17 @@ footer p {
         padding: 30px 20px;
     }
 
+    .showspace h3 {
+        margin-right: 130px;
+    }
 
+    .twins .type {
+        margin-right: 80px;
+    }
+
+    .twins div button {
+        margin-right: 90px;
+    }
 
 
 }
