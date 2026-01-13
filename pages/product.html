@@ -18,11 +18,17 @@
             <a href="../index.html">Home</a>
             <a href="./about.html">About</a>
             <a href="./product.html" class="active">Products</a>
+
             <a href="./contact.html">Contact</a>
         </nav>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
 
         <!-- Mobile hamburger -->
         <nav class="mobile-nav">
+           
+
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="hamburger">
                 <span></span>
@@ -30,8 +36,11 @@
                 <span></span>
             </label>
 
+
             <div class="menu">
                 <div class="logos"><a href="../index.html">🌀ESL PAL</a></div>
+
+
                 <ul>
                     <li><a href="../index.html">HOME</a></li>
                     <li><a href="./about.html">ABOUT</a></li>
@@ -84,6 +93,7 @@
 
 
     <section class="page-title">
+        
         <h1>Our Robots</h1>
         <h2>Robots For The Real World</h2>
         <p>Discover our range of intelligent robots designed to simplify work, improve efficiency, and support
@@ -119,18 +129,26 @@
 
             <div class="protext">
                 <h4>MODEL 23EK4</h4>
-                <h3>CleaNova</h3>
 
-                <p>
-                    An intelligentcleaning robot that maps spaces accurately and cleans efficiently. CleaNova
-                    operates
-                    quietly, avoid obstacles, and delivers consistent, hands-free cleanliness for modern
-                    environment.
-                </p>
 
-                <div>
-                    <a href="./contact.html">Learn More</a>
+                <div class="product-card">
+                    <h3>CleanerBot X1</h3>
+                    <p>Autonomous cleaning robot</p>
+                    <p>
+                        An intelligentcleaning robot that maps spaces accurately and cleans efficiently.
+                    </p>
+                    <p class="price">₦130,000</p>
+                    <div>
+                        <a href="./contact.html">Learn More</a>
+
+                        <button onclick="addToCart('CleanerBot X1', 130000)">
+                            Add to Cart
+                        </button>
+                    </div>
+
+
                 </div>
+
 
             </div>
         </div>
@@ -146,13 +164,24 @@
 
             <div class="protext">
                 <h4>MODEL 23EK4</h4>
-                <h3>ForgeBot</h3>
-                <p>
-                    ForgeBot is a high-performance industrial robot built for precision and heavty workloads. iit
-                    improves productivity, accuracy, and efficiency on production lines.
-                </p>
-                <div>
-                    <a href="./contact.html">Learn More</a>
+
+                <div class="product-card">
+                    <h3>ForgeBot</h3>
+                    <p>Autonomous cleaning robot</p>
+                    <p>
+                        ForgeBot is a high-performance industrial robot built for precision and heavty workloads.
+
+                    </p>
+                    <p class="price">₦120,000</p>
+                    <div>
+                        <a href="./contact.html">Learn More</a>
+
+                        <button onclick="addToCart('ForgeBot', 120000)">
+                            Add to Cart
+                        </button>
+                    </div>
+
+
                 </div>
 
             </div>
@@ -168,19 +197,30 @@
 
             <div class="protext">
                 <h4>MODEL 23EK4</h4>
-                <h3>PureSweep</h3>
 
-                <p>
-                    PureSweep uses smart sensors and optimized cleaning paths to remove dirt with precision.
-                    Designed
-                    for high-traffic areas, it delivers reliable and energy-efficient every time.
-                </p>
+                <div class="product-card">
+                    <h3>PureSweep</h3>
+                    <p>Autonomous cleaning robot</p>
+                    <p>
+                        PureSweep uses smart sensors and optimized cleaning paths to remove dirt with precision.
 
-                <div>
-                    <a href="./contact.html">Learn More</a>
+                    </p>
+
+                    <p class="price">₦170,000</p>
+                    <div>
+                        <a href="./contact.html">Learn More</a>
+
+                        <button onclick="addToCart('PureSweep', 170000)">
+                            Add to Cart
+                        </button>
+                    </div>
+
+
                 </div>
 
             </div>
+
+
         </div>
 
 
@@ -192,15 +232,23 @@
 
             <div class="protext" id="mess">
                 <h4>MODEL 23EK4</h4>
-                <h3>SentinelX</h3>
 
-                <p>
-                    SentileX is an autonomous security robot with 360° monitoring and real-time threat detection. It
-                    patrols continiously and sends instant alerts to keep spaces secure.
-                </p>
+                <div class="product-card">
+                    <h3>SentinelX</h3>
+                    <p>Autonomous cleaning robot</p>
+                    <p>
+                        SentileX is an autonomous security robot with 360° monitoring and real-time threat detection.
+                    </p>
+                    <p class="price">₦500,000</p>
+                    <div>
+                        <a href="./contact.html">Learn More</a>
 
-                <div>
-                    <a href="./contact.html">Learn More</a>
+                        <button onclick="addToCart('SentinelX', 500000)">
+                            Add to Cart
+                        </button>
+                    </div>
+
+
                 </div>
 
             </div>
@@ -218,15 +266,24 @@
 
             <div class="protext">
                 <h4>MODEL 23EK4</h4>
-                <h3>Aura</h3>
 
-                <p>
-                    Aura is a smart assistant robot designed to support daily tasks through voice interaction and
-                    adaptive learning. Friendly, responsive, and easy to integrate into any space.
-                </p>
+                <div class="product-card">
+                    <h3>Aura</h3>
+                    <p>Autonomous cleaning robot</p>
+                    <p>
+                        Aura is a smart assistant robot designed to support daily tasks through voice interaction and
+                        adaptive learning.
+                    </p>
+                    <p class="price">₦100,000</p>
+                    <div>
+                        <a href="./contact.html">Learn More</a>
 
-                <div>
-                    <a href="./contact.html">Learn More</a>
+                        <button onclick="addToCart('Aura', 100000)">
+                            Add to Cart
+                        </button>
+                    </div>
+
+
                 </div>
 
             </div>
@@ -241,16 +298,25 @@
 
             <div class="protext">
                 <h4>MODEL 23EK4</h4>
-                <h3>Aegis-One</h3>
 
-                <p>
-                    Aegis-One provides proactive surveillance through advanced vision and AI decision making. Built
-                    for
-                    relaiblility, it delivers constant protection day and night.
-                </p>
 
-                <div>
-                    <a href="./contact.html">Learn More</a>
+                <div class="product-card">
+                    <h3>Aegis-One</h3>
+                    <p>Autonomous cleaning robot</p>
+                    <p>
+                        Aegis-One provides proactive surveillance through advanced vision and AI decision making.
+                    </p>
+
+                    <p class="price">₦250,000</p>
+                    <div>
+                        <a href="./contact.html">Learn More</a>
+
+                        <button onclick="addToCart('Aegis-one', 250000)">
+                            Add to Cart
+                        </button>
+                    </div>
+
+
                 </div>
 
             </div>
@@ -321,6 +387,77 @@
 
 
     </footer>
+
+    <div class="cart-panel" id="cart">
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <ul id="cart-items"></ul>
+
+
+        <p class="total">
+            Total: ₦<span id="cart-total">0</span>
+        </p>
+
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script>
+        let cart = [];
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartItems = document.getElementById("cart-items");
+            const cartCount = document.getElementById("cart-count");
+            const cartTotal = document.getElementById("cart-total");
+
+            cartItems.innerHTML = "";
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                total += item.price;
+
+                const li = document.createElement("li");
+                li.innerHTML = `
+        <span>${item.name}</span>
+        <span>
+          ₦${item.price.toLocaleString()}
+          <button onclick="removeItem(${index})">✖</button>
+        </span>
+      `;
+                cartItems.appendChild(li);
+            });
+
+            cartCount.innerText = cart.length;
+            cartTotal.innerText = total.toLocaleString();
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+
+        function toggleCart() {
+            const cart = document.getElementById("cart");
+            cart.classList.toggle("show");
+        }
+
+        function checkout() {
+            alert(
+                "Your order has been made successfully.\nYou will receive an email from us."
+            );
+
+            cart = [];
+            updateCart();
+            toggleCart();
+        }
+    </script>
+
+
+
 </body>
 
 </html>
