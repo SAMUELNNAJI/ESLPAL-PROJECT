@@ -5,11 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESL ourProducts</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet" href="./product.css">
 </head>
 
@@ -27,7 +22,7 @@
             <a href="./contact.html">Contact</a>
         </nav>
         <div class="cart-icon" onclick="toggleCart()">
-            <i class="fa-solid fa-cart-shopping"></i> <span id="cart-count">0</span>
+            🛒 <span id="cart-count">0</span>
         </div>
 
         <!-- Mobile hamburger -->
@@ -98,13 +93,14 @@
 
 
     <section class="page-title">
-
-        <h1>Our Robots</h1>
-        <h2>Robots For The Real World</h2>
-        <p>Discover our range of intelligent robots designed to simplify work, improve efficiency, and support
-            everyday
-            life.
-        </p>
+        <div class="roboot">
+            <h1>Our Robots</h1>
+            <h2>Robots For The Real World</h2>
+            <p>Discover our range of intelligent robots designed to simplify work, improve efficiency, and support
+                everyday
+                life.
+            </p>
+        </div>
 
         <div class="hero-video">
             <video autoplay muted loop src="../assets/videos/robotvideo2.mp4"></video>
@@ -123,350 +119,283 @@
 
         </div>
 
+        <div class="card-showone">
+            <div class="showone1">
+                <div class="img">
+                    <img src="../assets/images/robo6-removebg-preview (1).png" alt="cleaning-vaccum-robot">
+                </div>
+                <div class="content">
+                    <h2>MODEL 23EK4</h2>
+                    <h4>CleanerBot X1</h4>
+                    <p>Autonomous cleaning robot
 
+                        An intelligentcleaning robot that maps spaces accurately and cleans efficiently.</p>
+                    <p class="price">₦100,000</p>
+                    <div>
+                        <a href="./contact.html">Learn More</a>
 
-        <div class="showone">
+                        <button onclick="addToCart('CleanerBot X1', 100000)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
 
+            </div>
 
-            <img src="../assets/images/robo6-removebg-preview (1).png" alt="cleaning-vaccum-robot">
-
-
-
-            <div class="protext">
-                <h4>MODEL 23EK4</h4>
-
-
-                <div class="product-card">
-                    <h3>CleanerBot X1</h3>
-                    <p>Autonomous cleaning robot</p>
+            <div class="showone1">
+                <div class="img">
+                    <img src="../assets/images/blackcleaning1-removebg-preview.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>MODEL 23EK4</h2>
+                    <h4>ForgeBot</h4>
                     <p>
-                        An intelligentcleaning robot that maps spaces accurately and cleans efficiently.
+                        ForgeBot is a high-performance industrial robot built for precision and heavty workloads.
                     </p>
                     <p class="price">₦130,000</p>
                     <div>
                         <a href="./contact.html">Learn More</a>
 
                         <button onclick="addToCart('CleanerBot X1', 130000)">
-                            Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
                         </button>
                     </div>
-
-
-                </div>
-
-
-            </div>
-        </div>
-
-
-        <div class="showone" id="bigg">
-
-
-
-            <img src="../assets/images/industri4-removebg-preview.png" alt="industri4-removebg-preview">
-
-
-
-            <div class="protext">
-                <h4>MODEL 23EK4</h4>
-
-                <div class="product-card">
-                    <h3>ForgeBot</h3>
-                    <p>Autonomous cleaning robot</p>
-                    <p>
-                        ForgeBot is a high-performance industrial robot built for precision and heavty workloads.
-
-                    </p>
-                    <p class="price">₦120,000</p>
-                    <div>
-                        <a href="./contact.html">Learn More</a>
-
-                        <button onclick="addToCart('ForgeBot', 120000)">
-                            Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-
-
                 </div>
 
             </div>
-        </div>
 
-
-        <div class="showone">
-
-
-            <img src="../assets/images/blackcleaning1-removebg-preview.png" alt="blackcleaning1-removebg-preview">
-
-
-
-            <div class="protext">
-                <h4>MODEL 23EK4</h4>
-
-                <div class="product-card">
-                    <h3>PureSweep</h3>
-                    <p>Autonomous cleaning robot</p>
+            <div class="showone1">
+                <div class="img">
+                    <img src="../assets/images/robo2-removebg-preview.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>MODEL 23EK4</h2>
+                    <h4>PureSweep</h4>
                     <p>
                         PureSweep uses smart sensors and optimized cleaning paths to remove dirt with precision.
-
                     </p>
-
-                    <p class="price">₦170,000</p>
+                    <p class="price">₦250,000</p>
                     <div>
                         <a href="./contact.html">Learn More</a>
 
-                        <button onclick="addToCart('PureSweep', 170000)">
-                            Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                        <button onclick="addToCart('CleanerBot X1', 250000)">
+                            Add to Cart
                         </button>
                     </div>
 
-
                 </div>
-
             </div>
 
-
-        </div>
-
-
-        <div class="showone" id="bat">
-
-
-            <img src="../assets/images/securitybot1-removebg-preview.png" alt="securitybot1-removebg-preview"
-                id="messpic">
-
-            <div class="protext" id="mess">
-                <h4>MODEL 23EK4</h4>
-
-                <div class="product-card">
-                    <h3>SentinelX</h3>
-                    <p>Autonomous cleaning robot</p>
+            <div class="showone1">
+                <div class="img">
+                    <img src="../assets/images/industri4-removebg-preview.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>SentinelX</h2>
+                    <h4>CleanerBot X1</h4>
                     <p>
                         SentileX is an autonomous security robot with 360° monitoring and real-time threat detection.
+                    </p>
+                    <p class="price">₦200,000</p>
+                    <div>
+                        <a href="./contact.html">Learn More</a>
+
+                        <button onclick="addToCart('CleanerBot X1', 200000)">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="showone1">
+                <div class="img">
+                    <img src="../assets/images/cleaningrobo1-removebg-preview.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>Aura</h2>
+                    <h4>CleanerBot X1</h4>
+                    <p>
+
+                        Aura is a smart assistant robot designed to support daily tasks through voice interaction and
+                        adaptive
+                        learning.
+                    </p>
+                    <p class="price">₦150,000</p>
+                    <div>
+                        <a href="./contact.html">Learn More</a>
+
+                        <button onclick="addToCart('CleanerBot X1', 150000)">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="showone1">
+                <div class="img">
+                    <img src="../assets/images/securitybot1-removebg-preview.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>MODEL 23EK4</h2>
+                    <h4>Aegis-One</h4>
+                    <p>
+                        Aegis-One provides proactive surveillance through advanced vision and AI decision making.
                     </p>
                     <p class="price">₦500,000</p>
                     <div>
                         <a href="./contact.html">Learn More</a>
 
-                        <button onclick="addToCart('SentinelX', 500000)">
-                            Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                        <button onclick="addToCart('CleanerBot X1', 500000)">
+                            Add to Cart
                         </button>
                     </div>
 
-
                 </div>
-
             </div>
 
+
+
+
+        </div>
+        </div>
 
 
         </div>
 
 
-        <div class="showone">
-
-
-            <img src="../assets/images/robo2-removebg-preview.png" alt="robo2-removebg-preview">
-
-
-            <div class="protext">
-                <h4>MODEL 23EK4</h4>
-
-                <div class="product-card">
-                    <h3>Aura</h3>
-                    <p>Autonomous cleaning robot</p>
-                    <p>
-                        Aura is a smart assistant robot designed to support daily tasks through voice interaction and
-                        adaptive learning.
-                    </p>
-                    <p class="price">₦100,000</p>
-                    <div>
-                        <a href="./contact.html">Learn More</a>
-
-                        <button onclick="addToCart('Aura', 100000)">
-                            Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-
-
-                </div>
-
-            </div>
+        </div>
         </div>
 
 
-        <div class="showone">
 
+        <!-- FOOTER -->
+        <footer>
+            <div class="logo">🌀ESL PAL</div>
+            <div class="show">
+                <div>
+                    <table>
+                        <tr>
+                            <th>Company</th>
+                            <th>Resources</th>
+                            <th>Help</th>
+                        </tr>
 
-            <img src="../assets/images/bob-removebg-preview.png" alt="security11-removebg-preview">
+                        <tr>
+                            <td><a href="../index.html">Home</a></td>
+                            <td>Case Studio</td>
+                            <td>Customers Support</td>
+                        </tr>
 
+                        <tr>
+                            <td><a href="./product.html">Products</a></td>
+                            <td>Webinars</td>
+                            <td>Delivery Details</td>
+                        </tr>
 
-            <div class="protext">
-                <h4>MODEL 23EK4</h4>
+                        <tr>
+                            <td><a href="./about.html">About</a></td>
+                            <td>Developers</td>
+                            <td>Terms & Conditions</td>
+                        </tr>
 
-
-                <div class="product-card">
-                    <h3>Aegis-One</h3>
-                    <p>Autonomous cleaning robot</p>
-                    <p>
-                        Aegis-One provides proactive surveillance through advanced vision and AI decision making.
-                    </p>
-
-                    <p class="price">₦250,000</p>
-                    <div>
-                        <a href="./contact.html">Learn More</a>
-
-                        <button onclick="addToCart('Aegis-one', 250000)">
-                            Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-
+                        <tr>
+                            <td><a href="./contact.html">Contact Us</a></td>
+                            <td>Documentation</td>
+                            <td>Privacy Policy</td>
+                        </tr>
+                    </table>
 
                 </div>
+                <div id="showspace">
+                    <h3>Subcribe To Newsletter</h3>
+                    <div class="twins">
+                        <div class="type">
+                            <input type="text" placeholder="Enter Email Address">
+                        </div>
+                        <div>
+                            <button>
+                                Subcribe
+                            </button>
+                        </div>
+                    </div>
 
+                </div>
             </div>
+
+            <p>© 2025 ESLNova Robotics. All rights reserved.</p>
+
+
+        </footer>
+
+        <div class="cart-panel" id="cart">
+            <h3>Your Cart</h3>
+            <ul id="cart-items"></ul>
+            <ul id="cart-items"></ul>
+
+
+            <p class="total">
+                Total: ₦<span id="cart-total">0</span>
+            </p>
+
+            <button onclick="checkout()">Checkout</button>
         </div>
 
+        <script>
+            let cart = [];
 
-    </section>
+            function addToCart(name, price) {
+                cart.push({ name, price });
+                updateCart();
+            }
 
+            function updateCart() {
+                const cartItems = document.getElementById("cart-items");
+                const cartCount = document.getElementById("cart-count");
+                const cartTotal = document.getElementById("cart-total");
 
+                cartItems.innerHTML = "";
+                let total = 0;
 
+                cart.forEach((item, index) => {
+                    total += item.price;
 
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="logo">🌀ESL PAL</div>
-        <div class="show">
-            <div>
-                <table>
-                    <tr>
-                        <th>Company</th>
-                        <th>Resources</th>
-                        <th>Help</th>
-                    </tr>
-
-                    <tr>
-                        <td><a href="../index.html">Home</a></td>
-                        <td>Case Studio</td>
-                        <td>Customers Support</td>
-                    </tr>
-
-                    <tr>
-                        <td><a href="./product.html">Products</a></td>
-                        <td>Webinars</td>
-                        <td>Delivery Details</td>
-                    </tr>
-
-                    <tr>
-                        <td><a href="./about.html">About</a></td>
-                        <td>Developers</td>
-                        <td>Terms & Conditions</td>
-                    </tr>
-
-                    <tr>
-                        <td><a href="./contact.html">Contact Us</a></td>
-                        <td>Documentation</td>
-                        <td>Privacy Policy</td>
-                    </tr>
-                </table>
-
-            </div>
-            <div id="showspace">
-                <h3>Subcribe To Newsletter</h3>
-                <div class="twins">
-                    <div class="type">
-                        <input type="text" placeholder="Enter Email Address">
-                    </div>
-                    <div>
-                        <button>
-                            Subcribe
-                        </button>
-                    </div>
-                </div>
-                <div class="contact-icons" id="footerlink">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://wa.me/2349152448990"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-solid fa-location-dot"></i></a>
-                    <a href="mailto:contact@eslpalrobotics.com"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
-                </div>
-
-            </div>
-        </div>
-
-        <p>© 2025 ESLNova Robotics. All rights reserved.</p>
-
-
-    </footer>
-
-    <div class="cart-panel" id="cart">
-        <h3>Your Cart</h3>
-        <ul id="cart-items"></ul>
-        <ul id="cart-items"></ul>
-
-
-        <p class="total">
-            Total: ₦<span id="cart-total">0</span>
-        </p>
-
-        <button onclick="checkout()">Checkout</button>
-    </div>
-
-    <script>
-        let cart = [];
-
-        function addToCart(name, price) {
-            cart.push({ name, price });
-            updateCart();
-        }
-
-        function updateCart() {
-            const cartItems = document.getElementById("cart-items");
-            const cartCount = document.getElementById("cart-count");
-            const cartTotal = document.getElementById("cart-total");
-
-            cartItems.innerHTML = "";
-            let total = 0;
-
-            cart.forEach((item, index) => {
-                total += item.price;
-
-                const li = document.createElement("li");
-                li.innerHTML = `
+                    const li = document.createElement("li");
+                    li.innerHTML = `
         <span>${item.name}</span>
         <span>
           ₦${item.price.toLocaleString()}
           <button onclick="removeItem(${index})">✖</button>
         </span>
       `;
-                cartItems.appendChild(li);
-            });
+                    cartItems.appendChild(li);
+                });
 
-            cartCount.innerText = cart.length;
-            cartTotal.innerText = total.toLocaleString();
-        }
+                cartCount.innerText = cart.length;
+                cartTotal.innerText = total.toLocaleString();
+            }
 
-        function removeItem(index) {
-            cart.splice(index, 1);
-            updateCart();
-        }
+            function removeItem(index) {
+                cart.splice(index, 1);
+                updateCart();
+            }
 
-        function toggleCart() {
-            const cart = document.getElementById("cart");
-            cart.classList.toggle("show");
-        }
+            function toggleCart() {
+                const cart = document.getElementById("cart");
+                cart.classList.toggle("show");
+            }
 
-        function checkout() {
-            alert(
-                "Your order has been made successfully.\nYou will receive an email from us."
-            );
+            function checkout() {
+                alert(
+                    "Your order has been made successfully.\nYou will receive an email from us."
+                );
 
-            cart = [];
-            updateCart();
-            toggleCart();
-        }
-    </script>
+                cart = [];
+                updateCart();
+                toggleCart();
+            }
+        </script>
 
 
 
