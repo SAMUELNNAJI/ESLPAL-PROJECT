@@ -329,7 +329,7 @@ nav.desktop-nav a.active::after {
 
 .hero-text p {
     font-size: 24px;
-}   
+}
 
 
 .values {
@@ -927,13 +927,55 @@ footer p {
     text-align: left;
 }
 
+
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    /* ✅ prevents overflow */
+}
+
+.contact-icons a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #111;
+    color: #fff;
+
+    text-decoration: none;
+    font-size: 18px;
+
+    box-sizing: border-box;
+}
+
+.contact-icons a:hover {
+    background: #0a84ff;
+    /* change color if you like */
+    transform: translateY(-3px);
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
     nav a {
         margin-left: 16px;
     }
 
-   
+
     .about h1 {
         font-size: 34px;
     }
@@ -1026,7 +1068,7 @@ footer p {
         img {
             width: 90%;
         }
-       
+
     }
 
     .trust {
@@ -1081,11 +1123,12 @@ footer p {
         margin-right: 75px;
     }
 
-    .twins {
+     .twins {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin-left: 0;
         justify-content: flex-start;
+        max-width: 90%;
 
     }
 
@@ -1099,16 +1142,40 @@ footer p {
     }
 
     .showspace h3 {
-        margin-right: 130px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .twins {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+        justify-content: center;
+        /* max-width: 90%; */
+        margin-right: 0;
+        margin-left: 30px;
     }
 
     .twins .type {
-        margin-right: 80px;
+        /* margin-right: 80px; */
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .twins div button {
-        margin-right: 90px;
+        margin-left: 0;
+        margin-top: 30px;
+        /* margin-right: 130px; */
     }
+
+    .contact-icons {
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 150px;
+    }
+
+    
+
 }
 
 @media (max-width: 1280px) {

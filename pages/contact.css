@@ -228,6 +228,7 @@ nav.desktop-nav a.active::after {
     max-width: 1000px;
     margin: 80px auto;
     padding: 0 20px;
+
 }
 
 
@@ -321,6 +322,46 @@ nav.desktop-nav a.active::after {
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
 }
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    /* ✅ prevents overflow */
+}
+
+.contact-icons a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #111;
+    color: #fff;
+
+    text-decoration: none;
+    font-size: 18px;
+
+    box-sizing: border-box;
+}
+
+.contact-icons a:hover {
+    background: #0a84ff;
+    /* change color if you like */
+    transform: translateY(-3px);
+}
+
 
 
 
@@ -447,7 +488,7 @@ footer p {
     }
 
 
-     /* footer */
+    /* footer */
     footer .logo {
         margin-left: 20px;
     }
@@ -458,7 +499,44 @@ footer p {
         justify-content: space-between;
     }
 
-    .showspace {
+    footer .show {
+        align-items: flex-start;
+        /* ✅ reset centering */
+    }
+
+    #showspace {
+        margin: 0 auto;
+        /* center block itself */
+        text-align: center;
+    }
+
+    #showspace {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* ✅ centers content */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .twins {
+        justify-content: center;
+    }
+
+    footer .show>div:first-child {
+        width: 100%;
+        text-align: center;
+    }
+
+    #showspace {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* .showspace {
         align-items: center;
     }
 
@@ -494,7 +572,7 @@ footer p {
         margin-left: 0;
         justify-content: flex-start;
 
-    }
+    } */
 
     footer p {
         margin: 0;
@@ -505,7 +583,7 @@ footer p {
         padding: 30px 20px;
     }
 
-     .showspace h3 {
+    /* .showspace h3 {
         margin-right: 130px;
     }
 
@@ -516,14 +594,18 @@ footer p {
     .twins div button {
         margin-right: 90px;
     }
+    
+    .footerlink {
+    
+    } */
 
 
-   
+
 }
 
 @media (min-width: 800px) and (max-width: 1280px) {
     .menu ul li {
         font-size: 30px;
-        margin-left: 200px;
+        /* margin-left: 200px; */
     }
 }

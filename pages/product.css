@@ -460,7 +460,7 @@ nav.desktop-nav a.active::after {
     justify-content: space-between;
     background: #1f2933;
     width: 1244px;
-    height: 700px;
+    height: 600px;
     margin-left: 145px;
     margin-bottom: 100px;
     /* box-shadow: 2px 5px 3px black; */
@@ -470,7 +470,7 @@ nav.desktop-nav a.active::after {
 .showone img {
     height: 350px;
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .showone:hover {
@@ -686,11 +686,16 @@ footer p {
     width: 100%;
     margin-top: 10px;
     padding: 8px;
-    background: #1f2933;
+    background: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
+}
+
+.cart-panel button:hover {
+    background: red;
+    color: black;
 }
 
 /* ===== ADD TO CART BUTTON ===== */
@@ -715,6 +720,47 @@ footer p {
 }
 
 
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    /* ✅ prevents overflow */
+}
+
+.contact-icons a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #111;
+    color: #fff;
+
+    text-decoration: none;
+    font-size: 18px;
+
+    box-sizing: border-box;
+}
+
+.contact-icons a:hover {
+    background: #0a84ff;
+    /* change color if you like */
+    transform: translateY(-3px);
+}
+
+
+
 
 
 
@@ -737,6 +783,16 @@ footer p {
 
     .desktopcart {
         display: none;
+    }
+
+    .showone img {
+        height: 350px;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    .productcard {
+        margin-top: 0;
     }
 
 
@@ -924,7 +980,7 @@ footer p {
 
     .showone {
         margin-left: 0;
-        height: 500px;
+        height: 600px;
 
         img {
             width: 400px;
@@ -933,6 +989,7 @@ footer p {
             height: 400px;
         }
     }
+
 
     #mess {
         margin-right: 0;
@@ -946,12 +1003,15 @@ footer p {
     }
 
     .protext {
+
         margin-left: 0;
         margin-right: 450px;
     }
 
+
+
     #bat {
-        height: 550px;
+        height: 650px;
     }
 
     .show {
@@ -960,5 +1020,60 @@ footer p {
     }
 
 
+
+}
+
+@media (max-width: 768px) {
+    footer .show {
+        align-items: flex-start;
+        /* ✅ reset centering */
+    }
+
+    #showspace {
+        margin: 0 auto;
+        /* center block itself */
+        text-align: center;
+    }
+
+    #showspace {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* ✅ centers content */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .twins {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .twins .type {
+        /* margin-right: 80px; */
+        margin-left: 100px;
+        margin-right: 0;
+    }
+
+    .twins div button {
+        margin-left: 0;
+        margin-top: 30px;
+        margin-right: 130px;
+    }
+
+    footer .show>div:first-child {
+        width: 100%;
+        text-align: center;
+    }
+
+    #showspace {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
 }

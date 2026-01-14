@@ -1006,6 +1006,45 @@ footer p {
 
 
 
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    /* ✅ prevents overflow */
+}
+
+.contact-icons a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #111;
+    color: #fff;
+
+    text-decoration: none;
+    font-size: 18px;
+
+    box-sizing: border-box;
+}
+
+.contact-icons a:hover {
+    background: #0a84ff;
+    /* change color if you like */
+    transform: translateY(-3px);
+}
+
 
 
 
@@ -1228,9 +1267,10 @@ footer p {
 
     .twins {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin-left: 0;
         justify-content: flex-start;
+        max-width: 90%;
 
     }
 
@@ -1244,15 +1284,20 @@ footer p {
     }
 
     .showspace h3 {
-        margin-right: 130px;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .twins .type {
-        margin-right: 80px;
+        /* margin-right: 80px; */
+        margin-left: 100px;
+        margin-right: 0;
     }
 
     .twins div button {
-        margin-right: 90px;
+        margin-left: 0;
+        margin-top: 30px;
+        margin-right: 130px;
     }
 
 
@@ -1323,6 +1368,46 @@ footer p {
 @media (min-width: 900px) (max-width: 1280px) {
     .productimage {
         margin-left: 280px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    footer .show {
+        align-items: flex-start;
+        /* ✅ reset centering */
+    }
+
+    #showspace {
+        margin: 0 auto;
+        /* center block itself */
+        text-align: center;
+    }
+
+    #showspace {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* ✅ centers content */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .twins {
+        justify-content: center;
+    }
+
+    footer .show>div:first-child {
+        width: 100%;
+        text-align: center;
+    }
+
+    #showspace {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 }
